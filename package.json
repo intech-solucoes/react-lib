@@ -1,16 +1,17 @@
 {
-	"name": "@intechprev/react-lib",
-	"version": "1.0.0",
+    "name": "@intechprev/react-lib",
+    "version": "1.0.3",
     "main": "dist/index.js",
     "typings": "./types/index.d.ts",
     "devDependencies": {
         "@types/node": "10.12.18",
+        "gluegun": "^3.2.0",
         "rimraf": "^2.6.3",
         "typescript": "3.2.4"
     },
-	"scripts": {
-        "build": "yarn clean && tsc -d --declarationDir ./types",
-        "clean": "node ./node_modules/rimraf/bin.js ./types && node ./node_modules/rimraf/bin.js ./dist",
+    "scripts": {
+        "build": "node build.js",
+        "prepublishOnly": "yarn build",
         "npm:publish": "yarn build && npm publish --access public"
     }
 }
