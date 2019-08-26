@@ -1,6 +1,6 @@
 {
     "name": "@intechprev/react-lib",
-    "version": "1.0.3",
+    "version": "1.0.6",
     "main": "dist/index.js",
     "typings": "./types/index.d.ts",
     "devDependencies": {
@@ -12,6 +12,6 @@
     "scripts": {
         "build": "node build.js",
         "prepublishOnly": "yarn build",
-        "npm:publish": "yarn build && npm publish --access public"
+        "npm:publish": "npm publish --access public"
     }
 }
