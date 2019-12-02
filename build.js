@@ -20,7 +20,8 @@ function sleep(ms) {
         choices: [
             `${major + 1}.0.0`,
             `${major}.${minor + 1}.0`,
-            `${major}.${minor}.${build + 1}`
+            `${major}.${minor}.${build + 1}`,
+            `${major}.${minor}.${build}`
         ]
     });
 
